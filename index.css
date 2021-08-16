@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section{
+    height: 800px;
+    width: 100%;
+}
+
+/* The main wrapper for the benefits section including the picture and content */
+.benefits-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: #c80000;
+}
+
+/* Benefits picture CSS */
+.benefits-content-pic-wrapper{
+    background-image: url("images/dealer-photo.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+/* end Benefits picture CSS */
+
+/* The wrapper that holds the benefits title and description */
+.benefits-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.benefits-title{
+    width: 100%;
+}
+
+.benefits-title>h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    color: aliceblue;
+}
+
+.benefits-description{
+    width: 90%;
+}
+
+.benefits-description>p{
+    font-size: 1.1rem;
+    padding: 5px 0px;
+    color: aliceblue;
+}
+
+.benefits-list-wrapper{
+    width: 75%
+}
+
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.benefits-list>li{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 5px 0px;
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.benefits-list>li>span{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-list>li>p{
+    height: 100%;
+    width: 89%;
+    margin: 0;
+}
+
+i{
+    padding-right: 5px;
+}
+/* end - benefits wrapper w/ content CSS */
+
+/* Responsive CSS Media Queries */
+@media only screen and (max-width: 570px){
+    .benefits-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        height: 100vh;
+        background-color: #c80000;
+    }
+    .benefits-content-pic-wrapper{
+        width: 100%;
+        height: 65vh;
+    }
+    .benefits-content-wrapper{
+        width: 90%;
+    }
+    .benefits-title>h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    /**/
+    .benefits-content-pic-wrapper{
+        width: 100%;
+    }
+    .benefits-content-wrapper {
+        width: 100%;
+    }
+    .benefits-section-wrapper {
+        height: 101.5vh;
+    }
+    .benefits-title>h2{
+        font-size: 2.25rem;
+    }
+}
+ 
+@media only screen and (max-width: 320px) {
+    /**/
+    .benefits-section-wrapper{
+        height: 100vh;
+    }
+    .benefits-title>h2{
+        font-size: 2rem;
+    }
+}
