@@ -151,7 +151,7 @@ i{
         width: 100%;
     }
     .benefits-section-wrapper {
-        height: 120vh;
+        height: 140vh;
     }
     .benefits-title>h2{
         font-size: 2.25rem;
@@ -161,7 +161,7 @@ i{
 @media only screen and (max-width: 320px) {
     /**/
     .benefits-section-wrapper{
-        height: 120vh;
+        height: 170vh;
     }
     .benefits-title>h2{
         font-size: 2rem;
