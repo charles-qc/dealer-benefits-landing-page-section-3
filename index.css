@@ -9,13 +9,8 @@
     font-family: "Avenir-Medium";
 }
 
-.main-section{
-    height: 800px;
-    width: 100%;
-}
-
 /* The main wrapper for the benefits section including the picture and content */
-.benefits-section-wrapper {
+.benefits-section-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,20 +18,31 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    height: 100%;
+    height: 65vh;
     background-color: #c80000;
+}
+
+/* Reverses the order of the content inside the 'benefits-section-wrapper'*/
+.benefits-section-wrapper-reverse{
+    flex-direction: row-reverse;
 }
 
 /* Benefits picture CSS */
 .benefits-content-pic-wrapper{
-    background-image: url("images/dealer-photo.jpeg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
     height: 100%;
 }
-/* end Benefits picture CSS */
+
+.benefits-content-pic-partner-portal{
+    background-image: url("images/partner-portal.jpg");
+}
+
+.benefits-content-pic-promo-fans{
+    background-image: url("images/promo-fans.jpg");
+}
 
 /* The wrapper that holds the benefits title and description */
 .benefits-content-wrapper{
@@ -45,34 +51,41 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding: 5% 0%;
 }
 
+/* Benefit headline container */
 .benefits-title{
     width: 100%;
 }
 
+/* The benefit headline */
 .benefits-title>h2{
     text-align: center;
     font-size: 3rem;
     text-transform: capitalize;
-    padding: 10px 0px;
-    color: aliceblue;
-}
-
-.benefits-description{
-    width: 90%;
-}
-
-.benefits-description>p{
-    font-size: 1.1rem;
     padding: 5px 0px;
     color: aliceblue;
 }
 
-.benefits-list-wrapper{
-    width: 90%
+/* Benefits description container */
+.benefits-description{
+    width: 90%;
 }
 
+/* Benefits description text */
+.benefits-description>p{
+    font-size: 1.125rem;
+    padding: 5px 0px;
+    color: aliceblue;
+}
+
+/* The container for the benefits list */
+.benefits-list-wrapper{
+    width: 95%
+}
+
+/* The benefits list */
 .benefits-list{
     display: flex;
     flex-wrap: wrap;
@@ -81,9 +94,9 @@
     padding: 10px 0px;
 }
 
+/* Benefits list content section */
 .benefits-list>li{
     width: 100%;
-    font-size: 1.25rem;
     padding: 5px 0px;
     color: aliceblue;
     list-style: none;
@@ -93,6 +106,7 @@
     align-items: flex-start;
 }
 
+/* Benefits section check mark icons */
 .benefits-list>li>span{
     height: 100%;
     width: 10%;
@@ -101,69 +115,49 @@
     justify-content: center;
 }
 
+/* Benefits list text */
 .benefits-list>li>p{
     height: 100%;
     width: 90%;
     margin: 0;
+    font-size: 1rem;
+       
 }
-
-i{
-    padding-right: 5px;
-}
-/* end - benefits wrapper w/ content CSS */
 
 /* Responsive CSS Media Queries */
-@media only screen and (max-width: 768px){
-    .benefits-section-wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        height: 100vh;
-        background-color: #c80000;
-    }
-    .benefits-content-pic-wrapper{
-        width: 100%;
-        height: 65vh;
-    }
-    .benefits-content-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: normal;
-        width: 90%;
-    }
-    .benefits-title>h2{
-        font-size: 2.5rem;
+@media only screen and (max-width: 1440px){
+    .benefits-section-wrapper{
+        height: 93vh;
     }
 }
 
-@media only screen and (max-width: 414px) {
-    /**/
+@media only screen and (max-width: 768px){
+    .benefits-section-wrapper{
+        height: 100%;
+    }
     .benefits-content-pic-wrapper{
         width: 100%;
+        height: 400px;
     }
-    .benefits-content-wrapper {
+
+    .benefits-list-wrapper{
         width: 100%;
     }
-    .benefits-section-wrapper {
-        height: 140vh;
+
+    .benefits-content-wrapper{
+        width: 95%;
+    }
+    .benefits-description{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .benefits-content-pic-wrapper{
+        width: 100%;
+        height: 250px;
     }
     .benefits-title>h2{
         font-size: 2.25rem;
-    }
-}
- 
-@media only screen and (max-width: 320px) {
-    /**/
-    .benefits-section-wrapper{
-        height: 170vh;
-    }
-    .benefits-title>h2{
-        font-size: 2rem;
     }
 }
