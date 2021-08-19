@@ -127,7 +127,7 @@
 /* Responsive CSS Media Queries */
 @media only screen and (max-width: 1440px){
     .benefits-section-wrapper{
-        height: 93vh;
+        height: 800px;
     }
 }
 
